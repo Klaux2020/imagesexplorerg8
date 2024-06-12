@@ -10,7 +10,7 @@ class ImageExplorerPage extends StatefulWidget {
 }
 
 class _ImageExplorerPageState extends State<ImageExplorerPage> {
-  int indexHeroList =0;
+  int indexHeroList =Random().nextInt(6);
   List<String> heroList = [
   "https://w7.pngwing.com/pngs/945/936/png-transparent-captain-america-hulk-thor-captain-america-comic-marvel-avengers-assemble-superhero-fictional-character.png",
   "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/c/9/d/medium-poster-design-no-3303-ironman-poster-ironman-posters-for-original-imaggbyayfagz4jf.jpeg?q=90&crop=false",
@@ -51,6 +51,14 @@ class _ImageExplorerPageState extends State<ImageExplorerPage> {
               //    fit:BoxFit.cover,
               // ),
             ),
+            Divider(),
+            Text(
+              "Iron Man",
+              style: TextStyle(
+                fontSize: 25 , 
+                fontWeight: FontWeight.bold
+                ),
+              ),
            Divider(),
            Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
